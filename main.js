@@ -26,3 +26,12 @@ if (userWord === reverseWord) {
 } else {
     alert("La parola non è palidroma");
 }
+
+function parolaPalindroma(word) {
+    const reverseWord = word.split('').reverse().join('');
+    if (word === reverseWord) {
+        alert("La parola è palindroma!");
+    } else {
+        alert("La parola non è palidroma");
+    }
+}
