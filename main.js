@@ -21,3 +21,8 @@ console.log(reverseWord);
 
 // Creare una funzione per capire se la parola inserita è palindroma
 
+if (userWord === reverseWord) {
+    alert("La parola è palindroma!");
+} else {
+    alert("La parola non è palidroma");
+}
