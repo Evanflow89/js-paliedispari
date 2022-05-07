@@ -9,11 +9,10 @@ let userNum = Number(prompt("Inserisci un numero tra 1 e 5"));
 
 
 let oddEven = [];
-const pari = pari;
-const dispari = dispari;
 
 
-while ((userChoose != pari) || (userChoose != dispari)) {
+
+while ((!userChoose.includes("dispari")) && (!userChoose.includes("pari"))) {
     userChoose = prompt("Scegli tra pari e dispari");
 } oddEven.push(userChoose);
 
