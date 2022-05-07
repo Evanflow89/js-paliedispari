@@ -28,10 +28,28 @@ while ((!userChoose.includes("dispari")) && (!userChoose.includes("pari"))) {
 while (userNum > 5 || userNum < 1 || isNaN(userNum) == true) {
     userNum = Number(prompt("Inserisci un numero tra 1 e 5"));
 }
-console.log(`Hai scelto il numero ${userNum}`);
+console.log(`Hai scelto il numero ${userNum}!`);
 
 
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+
+const cpuNumber = randomNumber(1, 5);
+console.log(`Il computer ha scelto il numero ${cpuNumber}!`);
 // Sommiamo i due numeri
+
+const sum = userNum + cpuNumber;
+console.log(sum);
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+
+if ((sum % 2 === 1) && (oddEven[0] === "dispari")) {
+    console.log("Hai vinto tu!");
+} else if
+    ((sum % 2 === 1) && (oddEven[0] === "pari")) {
+    console.log("Hai perso!");
+} else if
+    ((sum % 2 === 0) && (oddEven[0] === "pari")) {
+    console.log("Hai vinto tu!");
+} else {
+    console.log("Hai perso!");
+}
 // Dichiariamo chi ha vinto.
