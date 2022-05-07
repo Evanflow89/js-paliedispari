@@ -29,7 +29,7 @@ while (userNum > 5 || userNum < 1 || isNaN(userNum) == true) {
     userNum = Number(prompt("Inserisci un numero tra 1 e 5"));
 }
 console.log(`Hai scelto il numero ${userNum}!`);
-
+console.log(`Hai scelto ${oddEven[0]}!`);
 
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 
@@ -39,6 +39,7 @@ console.log(`Il computer ha scelto il numero ${cpuNumber}!`);
 
 const sum = userNum + cpuNumber;
 console.log(sum);
+
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 
 if ((sum % 2 === 1) && (oddEven[0] === "dispari")) {
